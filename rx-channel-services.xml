@@ -3,6 +3,8 @@
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="other" />
     <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="other" />
     <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="other" />
+    <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="other" />
+    <prescription type="service" class="mtopsdk.xstate.XStateService" sender="other" />
     
     <prescription type="service" class="org.android.agoo.accs.AgooService" sender="other" />
     <prescription type="service" class="com.android.agoo.MsgService" sender="other" />
@@ -10,6 +12,9 @@
     
     <prescription type="service" class="com.alibaba.tcms.service.TCMSService" sender="other" />
     <prescription type="service" class="com.alibaba.tcms.service.TCMSService$TCMSKernalService" sender="other" />
+    <prescription type="service" class="com.alibaba.tcms.service.XPushMessageHandleService" sender="other" />
+    <prescription type="service" class="com.alibaba.tcms.service.ListenerService" sender="other" />
+    <prescription type="service" class="com.alibaba.tcms.service.KeepAliveService" sender="other" />
     
     <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="other" />
     <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="other" />
@@ -17,4 +22,7 @@
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="other" />
     <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="other" />
     <prescription type="broadcast" class="com.taobao.msgnotification.AgooNotificationReceiver" sender="other" />
+    <prescription type="broadcast" class="com.aliyun.AliyunMessageReceiver" sender="other" />
+    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="other" />
+    <prescription type="broadcast" class="com.alibaba.sdk.android.push.SystemEventReceiver" sender="other" />
 </prescriptions>
