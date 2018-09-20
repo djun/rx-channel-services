@@ -3,4 +3,12 @@
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="other" />
     <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="other" />
     <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="other" />
+    
+    <prescription type="service" class="org.android.agoo.accs.AgooService" sender="other" />
+    <prescription type="service" class="com.android.agoo.MsgService" sender="other" />
+    <prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="other" />
+    
+    <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="other" />
+    <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="other" />
+    <prescription type="broadcast" class="com.taobao.msgnotification.AgooNotificationReceiver" sender="other" />
 </prescriptions>
