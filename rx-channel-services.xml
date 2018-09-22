@@ -7,6 +7,7 @@
     <prescription type="service" class="mtopsdk.xstate.XStateService" sender="other-app" />
     <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="other-app" />
     <prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="other-app" />
+    <prescription type="service" class="com.alibaba.analytics.AnalyticsService" sender="other-app" />
     
     <prescription type="service" class="org.android.agoo.accs.AgooService" sender="other-app" />
     <prescription type="service" class="com.android.agoo.MsgService" sender="other-app" />

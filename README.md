@@ -2,7 +2,7 @@
 
 本处方用于完全屏蔽taobao的ChannelServices，屏蔽其导致的应用间相互唤醒，缓解ali系或使用aliSDK的app启动时的卡顿。 
 
-新增屏蔽AgooService，TCMSService，OrangeService，mtopsdk。 
+新增屏蔽AgooService，TCMSService，OrangeService，AnalyticsService，mtopsdk。 
 
 (By DJun，酷安ID：djunxp)
 
