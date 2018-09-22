@@ -4,6 +4,8 @@
 
 新增屏蔽AgooService，TCMSService，OrangeService，AnalyticsService，mtopsdk。 
 
+根据SDK文档屏蔽action测试中。
+
 (By DJun，酷安ID：djunxp)
 
 点击使用处方：https://greenify.github.io/djun/rx-channel-services
