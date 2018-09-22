@@ -5,6 +5,8 @@
     <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="other-app" />
     <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="other-app" />
     <prescription type="service" class="mtopsdk.xstate.XStateService" sender="other-app" />
+    <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="other-app" />
+    <prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="other-app" />
     
     <prescription type="service" class="org.android.agoo.accs.AgooService" sender="other-app" />
     <prescription type="service" class="com.android.agoo.MsgService" sender="other-app" />
@@ -19,10 +21,11 @@
     <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="other-app" />
     <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="other-app" />
     
+    <prescription type="broadcast" class="com.taobao.accs.ServiceReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.taobao.msgnotification.AgooNotificationReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.aliyun.AliyunMessageReceiver" sender="other-app" />
-    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.alibaba.sdk.android.push.SystemEventReceiver" sender="other-app" />
 </prescriptions>
