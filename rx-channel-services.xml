@@ -10,6 +10,34 @@
         </intent-filter>
     </prescription>
     
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+        </intent-filter>
+    </prescription>
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
+        </intent-filter>
+    </prescription>
+    
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="org.agoo.android.intent.action.RECEIVE" />
+        </intent-filter>
+    </prescription>
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="org.android.agoo.client.MessageReceiverService" />
+        </intent-filter>
+    </prescription>
+    
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="org.agoo.android.intent.action.PING_V4" />
+        </intent-filter>
+    </prescription>
+    
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
     <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="other-app" />
@@ -32,6 +60,10 @@
     
     <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="other-app" />
     <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="other-app" />
+    
+    <prescription type="service" class="com.alibaba.sdk.android.push.channel.KeepChannelService" sender="other-app" />
+    
+    <prescription type="activity" class="com.alibaba.sdk.android.push.keeplive.PushExtActivity" sender="other-app" />
     
     <prescription type="broadcast" sender="any" >
         <intent-filter>
