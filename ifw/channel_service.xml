@@ -1,0 +1,6 @@
+<rules>
+    <service block="true" log="false">
+        <component-filter name="*/com.taobao.accs.ChannelService" />
+        <component-filter name="*/com.taobao.accs.ChannelService$KernelService" />
+    </service>
+</rules>
