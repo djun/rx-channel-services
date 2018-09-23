@@ -40,30 +40,31 @@
     
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
-    <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="other-app" />
-    <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="other-app" />
-    <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="other-app" />
+    <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="any" />
+    <prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="any" />
+    <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="any" />
+    <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="any" />
+    <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="any" />
+    
     <prescription type="service" class="mtopsdk.xstate.XStateService" sender="other-app" />
-    <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="other-app" />
-    <prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="other-app" />
     <prescription type="service" class="com.alibaba.analytics.AnalyticsService" sender="other-app" />
     
-    <prescription type="service" class="org.android.agoo.accs.AgooService" sender="other-app" />
-    <prescription type="service" class="com.android.agoo.MsgService" sender="other-app" />
-    <prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="other-app" />
+    <prescription type="service" class="org.android.agoo.accs.AgooService" sender="any" />
+    <prescription type="service" class="com.android.agoo.MsgService" sender="any" />
+    <prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="any" />
     
-    <prescription type="service" class="com.alibaba.tcms.service.TCMSService" sender="other-app" />
-    <prescription type="service" class="com.alibaba.tcms.service.TCMSService$TCMSKernalService" sender="other-app" />
-    <prescription type="service" class="com.alibaba.tcms.service.XPushMessageHandleService" sender="other-app" />
-    <prescription type="service" class="com.alibaba.tcms.service.ListenerService" sender="other-app" />
-    <prescription type="service" class="com.alibaba.tcms.service.KeepAliveService" sender="other-app" />
+    <prescription type="service" class="com.alibaba.tcms.service.TCMSService" sender="any" />
+    <prescription type="service" class="com.alibaba.tcms.service.TCMSService$TCMSKernalService" sender="any" />
+    <prescription type="service" class="com.alibaba.tcms.service.XPushMessageHandleService" sender="any" />
+    <prescription type="service" class="com.alibaba.tcms.service.ListenerService" sender="any" />
+    <prescription type="service" class="com.alibaba.tcms.service.KeepAliveService" sender="any" />
     
-    <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="other-app" />
-    <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="other-app" />
+    <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="any" />
+    <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="any" />
     
-    <prescription type="service" class="com.alibaba.sdk.android.push.channel.KeepChannelService" sender="other-app" />
+    <prescription type="service" class="com.alibaba.sdk.android.push.channel.KeepChannelService" sender="any" />
     
-    <prescription type="activity" class="com.alibaba.sdk.android.push.keeplive.PushExtActivity" sender="other-app" />
+    <prescription type="activity" class="com.alibaba.sdk.android.push.keeplive.PushExtActivity" sender="any" />
     
     <prescription type="broadcast" sender="any" >
         <intent-filter>
@@ -76,11 +77,31 @@
         </intent-filter>
     </prescription>
     
-    <prescription type="broadcast" class="com.taobao.accs.ServiceReceiver" sender="other-app" />
-    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="other-app" />
-    <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="other-app" />
-    <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="other-app" />
-    <prescription type="broadcast" class="com.taobao.msgnotification.AgooNotificationReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.accs.ServiceReceiver" sender="any" />
+    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="any" />
+    <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="any" />
+    <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="any" />
+    <prescription type="broadcast" class="com.taobao.msgnotification.AgooNotificationReceiver" sender="any" />
+    
     <prescription type="broadcast" class="com.aliyun.AliyunMessageReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.alibaba.sdk.android.push.SystemEventReceiver" sender="other-app" />
+    
+    
+    <!-- below are for taobao app -->
+    
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_TcmsService_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_channel_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_leak_check_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_messagebox_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_photodeal_Service" sender="any" />
+    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_sentry_Service" sender="any" />
+    
+    <prescription type="broadcast" class="com.taobao.update.bundle.BundleInstalledExitAppReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.tao.msgcenter.outter.BundleLaunchReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.tao.msgcenter.timer.TimerAlarmReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.tao.watchdog.WatchdogReceiver" sender="other-app" />
+    <prescription type="broadcast" class="com.taobao.monitor.receiver.NetworkChangedReceiver" sender="other-app" />
+    <prescription type="broadcast" class="org.android.agoo.huawei.HuaWeiReceiver" sender="other-app" />
+    <prescription type="broadcast" class="org.android.agoo.xiaomi.MiPushBroadcastReceiver" sender="other-app" />
 </prescriptions>
