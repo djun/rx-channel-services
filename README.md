@@ -4,9 +4,7 @@
 
 新增屏蔽AgooService，TCMSService，OrangeService，AnalyticsService，mtopsdk。 
 
-根据SDK文档屏蔽action测试中。
-
-IFW防止ChannelService复活的方案（实验性，有风险）：手动复制本项目ifw目录下的channel_service.xml，到/data/system/ifw，并将xml文件修改权限为0644。
+根据SDK文档、AndroidManifest屏蔽action测试中。
 
 (By DJun，酷安ID：djunxp)
 
