@@ -108,11 +108,7 @@
     </prescription>
     
     <prescription type="broadcast" class="com.taobao.accs.ServiceReceiver" sender="any" />
-    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="any" >
-        <intent-filter>
-            <action name="android.intent.action.USER_PRESENT" />
-        </intent-filter>
-    </prescription>
+    <prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="any" />
     <prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="any" />
     <prescription type="broadcast" class="com.taobao.orange.receiver.OrangeReceiver" sender="any" />
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.event.AgooAndWeitaoMsgReceiver" sender="any" />
