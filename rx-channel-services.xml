@@ -86,6 +86,9 @@
     <prescription type="service" class="com.taobao.orange.accssupport.OrangeAccsService" sender="any" />
     <prescription type="service" class="com.taobao.orange.service.OrangeApiService" sender="any" />
     
+    <prescription type="service" class="android.taobao.windvane.extra.jsbridge.WVACCSService" sender="any" />
+    
+    
     <prescription type="service" class="com.alibaba.sdk.android.push.channel.KeepChannelService" sender="any" />
     
     <prescription type="activity" class="com.alibaba.sdk.android.push.keeplive.PushExtActivity" sender="any" />
