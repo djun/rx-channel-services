@@ -6,7 +6,7 @@
             <action name="com.taobao.accs.intent.action.RECEIVE" />
             <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
             <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
-            <action name="com.taobao.orange.service.OrangeApiService" 
+            <action name="com.taobao.orange.service.OrangeApiService" />
             <action name="org.agoo.android.intent.action.RECEIVE" />
             <action name="org.android.agoo.client.MessageReceiverService" />
             <action name="org.agoo.android.intent.action.PING_V4" />
