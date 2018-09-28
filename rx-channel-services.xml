@@ -2,61 +2,15 @@
     <prescription type="service" sender="any" >
         <intent-filter>
             <action name="com.taobao.accs.intent.action.SERVICE" />
-        </intent-filter>
-    </prescription>
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="com.taobao.accs.intent.action.ELECTION" />
-        </intent-filter>
-    </prescription>
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="com.taobao.accs.intent.action.RECEIVE" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
-        </intent-filter>
-    </prescription>
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
-            <action name="com.taobao.orange.service.OrangeApiService" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
+            <action name="com.taobao.orange.service.OrangeApiService" 
             <action name="org.agoo.android.intent.action.RECEIVE" />
-        </intent-filter>
-    </prescription>
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="org.android.agoo.client.MessageReceiverService" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="org.agoo.android.intent.action.PING_V4" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="anetwork.channel.aidl.IRemoteNetworkGetter" />
-        </intent-filter>
-    </prescription>
-    
-    <prescription type="service" sender="any" >
-        <intent-filter>
             <action name="mtopsdk.xstate.aidl.IXState" />
         </intent-filter>
     </prescription>
@@ -88,6 +42,8 @@
     
     <prescription type="service" class="android.taobao.windvane.extra.jsbridge.WVACCSService" sender="any" />
     
+    <prescription type="service" class="com.taobao.munion.base.download.DownloadingService" sender="any" />
+    
     
     <prescription type="service" class="com.alibaba.sdk.android.push.channel.KeepChannelService" sender="any" />
     
@@ -95,18 +51,19 @@
     
     <prescription type="broadcast" sender="any" >
         <intent-filter>
+            <action name="com.taobao.taobao.intent.action.COMMAND" />
             <action name="com.taobao.accs.intent.action.COMMAND" />
-        </intent-filter>
-    </prescription>
-    <prescription type="broadcast" sender="any" >
-        <intent-filter>
             <action name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            <action name="anetwork.channel.intent.action.COMMAND" />
         </intent-filter>
     </prescription>
-    
     <prescription type="broadcast" sender="any" >
         <intent-filter>
-            <action name="anetwork.channel.intent.action.COMMAND" />
+            <action name="com.taobao.atlas.intent.PATCH_APP" />
+            <action name="com.taobao.atlas.intent.DEX_PATCH_APP" />
+            <action name="com.taobao.atlas.intent.ROLLBACK_PATCH" />
+            <action name="com.taobao.atlas.intent.ROLLBACK_DEX_PATCH" />
+            <action name="com.taobao.atlas.intent.startmutidynamic" />
         </intent-filter>
     </prescription>
     
@@ -120,6 +77,7 @@
     
     <prescription type="broadcast" class="com.alibaba.tcms.TcmsCommonBroadcastReceiver" sender="any" />
     <prescription type="broadcast" class="com.alibaba.tcms.PushMessageReceiver" sender="any" />
+    <prescription type="broadcast" class="com.alibaba.mipush.MSG_BROADCAST" sender="any" />
     
     <prescription type="broadcast" class="com.aliyun.AliyunMessageReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.alibaba.sdk.android.push.SystemEventReceiver" sender="other-app" />
@@ -143,4 +101,21 @@
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.timer.TimerAlarmReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.taobao.tao.watchdog.WatchdogReceiver" sender="other-app" />
     <prescription type="broadcast" class="com.taobao.monitor.receiver.NetworkChangedReceiver" sender="other-app" />
+    
+    
+    <!-- approximate matching -->
+    <prescription type="broadcast" class="com.taobao.*" >
+        <intent-filter>
+            <action name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action name="android.intent.action.BOOT_COMPLETED" />
+            <action name="android.intent.action.USER_PRESENT" />
+            <action name="android.intent.action.PACKAGE_ADDED" />
+            <action name="android.intent.action.PACKAGE_REPLACED" />
+            <action name="android.intent.action.PACKAGE_CHANGED" />
+            <action name="android.intent.action.PACKAGE_REMOVED" />
+            <action name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+            <action name="android.intent.action.ACTION_POWER_CONNECTED" />
+            <action name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+        </intent-filter>
+    </prescription>
 </prescriptions>
