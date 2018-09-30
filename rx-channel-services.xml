@@ -49,6 +49,8 @@
     
     <prescription type="activity" class="com.alibaba.sdk.android.push.keeplive.PushExtActivity" sender="any" />
     
+    <prescription type="activity" class="com.alibaba.mtl.appmonitor.AppMonitorService" sender="any" />
+    
     <prescription type="broadcast" sender="any" >
         <intent-filter>
             <action name="com.taobao.taobao.intent.action.COMMAND" />
