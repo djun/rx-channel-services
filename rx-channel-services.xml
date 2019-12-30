@@ -93,14 +93,6 @@
     
     <!-- below are for taobao app -->
     
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_TcmsService_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_channel_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_leak_check_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_messagebox_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_photodeal_Service" sender="any" />
-    <prescription type="service" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_com_taobao_taobao_sentry_Service" sender="any" />
-    
     <prescription type="broadcast" class="com.taobao.update.bundle.BundleInstalledExitAppReceiver" sender="any" />
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.outter.BundleLaunchReceiver" sender="any" />
     <prescription type="broadcast" class="com.taobao.tao.msgcenter.timer.TimerAlarmReceiver" sender="any" />
@@ -109,6 +101,8 @@
     
     
     <!-- approximate matching -->
+    <prescription type="activity" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_*" sender="any" />
+    <prescription type="service" class="com.taobao.atlas.dexmerge.*" sender="any" />
     <prescription type="broadcast" class="com.taobao.*" >
         <intent-filter>
             <action name="android.net.conn.CONNECTIVITY_CHANGE" />
