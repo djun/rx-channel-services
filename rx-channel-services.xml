@@ -16,10 +16,12 @@
     </prescription>
     
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
+    <prescription type="service" class="com.alibaba.dingtalk.accs.connection.AccsBridgeService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="any" />
     <prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="any" />
     <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="any" />
+    <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="any" />
     <prescription type="service" class="com.alibaba.mobileim.channel.service.InetIOService" sender="any" />
     <prescription type="service" class="com.alibaba.analytics.AnalyticsService" sender="any" />
     
