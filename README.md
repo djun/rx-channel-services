@@ -10,3 +10,4 @@
 
 点击使用处方：https://wulinfo.github.io/rx-channel-services
 
+https://wulinfo.github.io/rx-channel-services/rx-channel-services.xml
