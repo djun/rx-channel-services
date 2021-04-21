@@ -28,7 +28,6 @@
     <prescription type="service" class="com.alibaba.sdk.android.push.MsgService" sender="any" />
     <prescription type="service" class="com.alibaba.sdk.android.push.channel.CheckService" sender="any" />
     <prescription type="service" class="org.android.agoo.accs.AgooService" sender="any" />
-    <prescription type="service" class="com.android.agoo.MsgService" sender="any" />
     <prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="any" />
     
     <prescription type="service" class="com.alibaba.tcms.service.TCMSService" sender="any" />
