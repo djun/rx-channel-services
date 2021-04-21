@@ -8,4 +8,4 @@
 
 (By DJun，酷安ID：djunxp)
 
-点击使用处方：https://greenify.github.io/wulinfo/rx-channel-services
+点击使用处方：https://greenify.github.io/lelemka0/rx-channel-services
