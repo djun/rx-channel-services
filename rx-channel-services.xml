@@ -1,4 +1,18 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="com.taobao.accs.intent.action.SERVICE" />
+            <action name="com.taobao.accs.intent.action.ELECTION" />
+            <action name="com.taobao.accs.intent.action.RECEIVE" />
+            <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
+            <action name="org.agoo.android.intent.action.RECEIVE" />
+            <action name="org.android.agoo.client.MessageReceiverService" />
+            <action name="org.agoo.android.intent.action.PING_V4" />
+            <action name="anetwork.channel.aidl.IRemoteNetworkGetter" />
+            <action name="mtopsdk.xstate.aidl.IXState" />
+        </intent-filter>
+    </prescription>
     
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
