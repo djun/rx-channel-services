@@ -2,9 +2,13 @@
     <prescription type="service" sender="any" >
         <intent-filter>
             <action name="com.taobao.accs.intent.action.SERVICE" />
-            
+            <!-- fix the chat window cannot be opened
+            <action name="com.taobao.accs.intent.action.ELECTION" />
+            <action name="com.taobao.accs.intent.action.RECEIVE" />
+            -->
             <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
             <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
+            <action name="com.taobao.orange.service.OrangeApiService" />
             <action name="org.agoo.android.intent.action.RECEIVE" />
             <action name="org.android.agoo.client.MessageReceiverService" />
             <action name="org.agoo.android.intent.action.PING_V4" />
@@ -27,6 +31,7 @@
     <prescription type="service" class="com.alibaba.sdk.android.push.MsgService" sender="any" />
     <prescription type="service" class="com.alibaba.sdk.android.push.channel.CheckService" sender="any" />
     <prescription type="service" class="org.android.agoo.accs.AgooService" sender="any" />
+    <prescription type="service" class="com.android.agoo.MsgService" sender="any" />
     <prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="any" />
     
     <prescription type="service" class="com.alibaba.tcms.service.TCMSService" sender="any" />
