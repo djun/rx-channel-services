@@ -1,8 +1,8 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
     <prescription type="service" sender="any" >
         <intent-filter>
-
-            <action name="com.taobao.accs.intent.action.RECEIVE" />
+            <action name="com.taobao.accs.intent.action.SERVICE" />
+            
             <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
             <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
             <action name="org.agoo.android.intent.action.RECEIVE" />
