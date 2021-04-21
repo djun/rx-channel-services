@@ -1,5 +1,12 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-
+    <prescription type="service" sender="any" >
+        <intent-filter>
+            <action name="com.taobao.accs.intent.action.SERVICE" />
+            <action name="com.taobao.accs.intent.action.ELECTION" />
+            <action name="com.taobao.accs.intent.action.RECEIVE" />
+            
+        </intent-filter>
+    </prescription>
     
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
