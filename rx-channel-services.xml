@@ -1,19 +1,4 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-    <prescription type="service" sender="any" >
-        <intent-filter>
-            <action name="com.taobao.accs.intent.action.SERVICE" />
-            <action name="com.taobao.accs.intent.action.ELECTION" />
-            <action name="com.taobao.accs.intent.action.RECEIVE" />
-            <action name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
-            <action name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
-            <action name="com.taobao.orange.service.OrangeApiService" />
-            <action name="org.agoo.android.intent.action.RECEIVE" />
-            <action name="org.android.agoo.client.MessageReceiverService" />
-            <action name="org.agoo.android.intent.action.PING_V4" />
-            <action name="anetwork.channel.aidl.IRemoteNetworkGetter" />
-            <action name="mtopsdk.xstate.aidl.IXState" />
-        </intent-filter>
-    </prescription>
     
     <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
@@ -50,11 +35,10 @@
     
     <prescription type="broadcast" sender="any" >
         <intent-filter>
-            <action name="com.taobao.atlas.intent.PATCH_APP" />
-            <action name="com.taobao.atlas.intent.DEX_PATCH_APP" />
-            <action name="com.taobao.atlas.intent.ROLLBACK_PATCH" />
-            <action name="com.taobao.atlas.intent.ROLLBACK_DEX_PATCH" />
-            <action name="com.taobao.atlas.intent.startmutidynamic" />
+            <action name="com.taobao.taobao.intent.action.COMMAND" />
+            <action name="com.taobao.accs.intent.action.COMMAND" />
+            <action name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            <action name="anetwork.channel.intent.action.COMMAND" />
         </intent-filter>
     </prescription>
     
@@ -87,8 +71,6 @@
     
     
     <!-- approximate matching -->
-    <prescription type="activity" class="android.taobao.atlas.runtime.newcomponent.ATLASPROXY_*" sender="any" />
-    <prescription type="service" class="com.taobao.atlas.dexmerge.*" sender="any" />
     <prescription type="broadcast" class="com.taobao.*" >
         <intent-filter>
             <action name="android.net.conn.CONNECTIVITY_CHANGE" />
