@@ -50,14 +50,6 @@
     
     <prescription type="broadcast" sender="any" >
         <intent-filter>
-            <action name="com.taobao.taobao.intent.action.COMMAND" />
-            <action name="com.taobao.accs.intent.action.COMMAND" />
-            <action name="com.taobao.accs.intent.action.START_FROM_AGOO" />
-            <action name="anetwork.channel.intent.action.COMMAND" />
-        </intent-filter>
-    </prescription>
-    <prescription type="broadcast" sender="any" >
-        <intent-filter>
             <action name="com.taobao.atlas.intent.PATCH_APP" />
             <action name="com.taobao.atlas.intent.DEX_PATCH_APP" />
             <action name="com.taobao.atlas.intent.ROLLBACK_PATCH" />
