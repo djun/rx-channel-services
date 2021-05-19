@@ -1,9 +1,6 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
     <prescription type="service" sender="any" >
         <intent-filter>
-            <action name="com.taobao.accs.intent.action.SERVICE" />
-            <action name="com.taobao.accs.intent.action.ELECTION" />
-            <action name="com.taobao.accs.intent.action.RECEIVE" />
             <action name="com.taobao.orange.service.OrangeApiService" />
             <action name="org.agoo.android.intent.action.RECEIVE" />
             <action name="org.android.agoo.client.MessageReceiverService" />
@@ -13,8 +10,6 @@
         </intent-filter>
     </prescription>
     
-    <prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
-    <prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
     <prescription type="service" class="com.taobao.accs.internal.AccsJobService" sender="any" />
     <prescription type="service" class="anetwork.channel.aidl.NetworkService" sender="any" />
     <prescription type="service" class="com.taobao.android.service.AidlBridgeService" sender="any" />
